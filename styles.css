@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Rokkitt', serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+h2, h3 {
+    font-weight: 700;
+    color: rgb(241, 241, 241);
+} 
+a {
+    color: rgb(241, 221, 151);
+}
+a:visited {
+    columns: rgb(241, 221, 151);
+}
+a:hover, a:active {
+    columns: #000;  
+    text-decoration: none;
+}
+.body-bg {
+    background-image: linear-gradient(to bottom, rgb(8, 32, 64)80%, rgb(55, 80, 36));    
+    color: white;
+}
+.base-bg {
+    background-color: rgb(241, 221, 151);
+    background-image: linear-gradient(to bottom, rgb(39, 53, 29)10%, rgb(8, 32, 64));    
+    color: rgb(241, 221, 151);
+    padding: 3em;
+    padding-top: 1rem;
+}
+
+.col-2,
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h2{
+    text-shadow: 2px 2px 30px rgba(25, 0, 255, 0.9);
+}
+/****** standard IMG *********/
+
+img {
+    display: block;
+     max-width: 100%;
+     height: auto;
+}
+figure {
+    margin:0;
+} 
+
+.container.col-3{
+    margin-left: 20px;
+}
+.footer {
+    color: rgb(18, 54, 27);
+    padding: 1rem;
+}
+.footer ul{
+    list-style: none;
+}
+a, .footer a {
+    color: rgb(255, 166, 65);
+}
+.footer a {
+    line-height: 1.5;
+}
+.footer a:visited {
+    color: rgb(18, 54, 27);
+}
+.footer a:active, .footer a:hover {
+    text-decoration: none;
+}   
+.copy {
+    display: flex;
+    justify-content: center; 
+}
+.billie.logo{
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    width: 180px;
+    margin-left: -110px;
+    margin-top: -20spx;
+}
+
+.sound{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.map{  
+    display: grid;
+    justify-content: center;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+}
+
+
+@media screen and (min-width:48rem) {
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .col-3 {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        row-gap: 1rem;
+    }
+}
+@media screen and (min-width:60rem) {
+    .col-3 {
+        max-width: 60rem;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        row-gap: 2rem;
+    }
+    .fr{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }   
+    .side{
+        display: grid;
+        grid-template-columns:2fr 1fr;
+    }
+}
+@media screen and (min-width:80rem) {
+    .container {
+        max-width: 76em;
+        margin: 0 auto;
+        margin-bottom: -3rem;
+    }  
+
+}
+@media screen and (min-width:100rem) {
+    .container {
+        max-width: 90rem;
+        margin: 0 auto;
+        margin-bottom: -3rem;
+        
+    }
+    .col-3 {
+        max-width: 60rem;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        row-gap: 2rem;
+    }
+    .fr{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }   
+    .side{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* Rétt hlutfall youtube > iframe  (.gluggi) 
+
+   óskuð breidd deilt í upphaflega breidd = n% 
+
+   til að finna rétta hæð : n%  * upphafleg hæð 
+*/
+
+/* 20em = 320px*/
+.gluggi {
+    display: grid;
+    justify-self: center;
+    height:2.5em; /*168px;*/ 
+    margin: auto;
+    }
+.kort{
+  display: grid;
+}
+  @media screen and (min-width: 25em) {
+    .gluggi {
+      height:5em; /*207px;*/ 
+      }
+   }
+  
+  @media screen and (min-width: 30em) {
+    .gluggi {
+      height:5em; /*252px;*/ 
+     }
+   }
+  
+  @media screen and (min-width: 37.5em) {
+    .gluggi {
+      height:5em; /*315px;*/
+      }
+   }
+  
+  @media screen and (min-width:60em){
+    .gluggi { /*950px;*/ 
+      height:5em; /*534px;*/ 
+    }
+  }
+  @media screen and (min-width: 80em) {
+    .gluggi { 
+      height:15em; /*~702px;*/ 
+      width: 20em;
+      }
+    } 
+  
+  
+  /* google kort */
+  
+  @media screen and (min-width: 30em) {
+    .kort {
+      height:15.75em; /*252px;*/ 
+      width: 15.75em;
+      justify-items: center;
+     }
+   }
+  
+  @media screen and (min-width: 37.5em) {
+    .kort {
+      height:19.7em; /*315px; */
+      width:19.7em; /*315px; */
+      justify-self: center;
+      align-self: center;
+      }
+   }
+  
+   @media screen and (min-width:48em){
+    .kort {     /* ca 800px */
+      height:20.2em; /*451,2px;*/ 
+      width: 20.2em;
+      justify-items: center;
+      align-self: center;
+    }
+  }
+  
